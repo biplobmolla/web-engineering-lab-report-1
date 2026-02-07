@@ -1,0 +1,70 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 6px 20px;
+    background-color: #333;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header ul li ul .search-bar {
+    padding: 5px 10px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+header ul li ul .search-bar input {
+    width: 300px;
+    height: 100%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+header ul li ul .search-bar img {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+header ul li ul .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+}
+
+header ul li ul .profile-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
