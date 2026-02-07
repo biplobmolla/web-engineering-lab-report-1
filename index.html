@@ -1,33 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevsHub - A Developers Communication Platform</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevsHub - A Developers Communication Platform</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header>
+  <header>
+    <ul>
+      <li>
+        <a href="#">DevsHub</a>
+      </li>
+      <li>
         <ul>
-            <li>
-                <a href="#">DevsHub</a>
-            </li>
-            <li>
-                <ul>
-                    <li>
-                        <div class="search-bar">
-                            <input type="text" placeholder="Search...">
-                            <img src="./images/search-icon.png" alt="Search Icon">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="profile-icon">
-                            <img src="./images/profile-icon.png" alt="Profile Icon">
-                        </div>
-                    </li>
-                </ul>
-            </li>
+          <li>
+            <div class="search-bar">
+              <input type="text" placeholder="Search..." />
+              <img src="./images/search-icon.png" alt="Search Icon" />
+            </div>
+          </li>
+          <li>
+            <div class="profile-icon">
+              <img src="./images/profile-icon.png" alt="Profile Icon" />
+            </div>
+          </li>
         </ul>
-    </header>
+      </li>
+    </ul>
+  </header>
+  <aside class="left-sidebar">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Channels</a></li>
+        <li><a href="#">Direct Messages</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <aside class="right-sidebar">
+    <section class="messages">
+      <h2>Messages</h2>
+      <ul>
+        <li class="message-item active">
+          <div class="profile-icon">
+            <img src="./images/profile-icon.png" alt="Profile Icon" />
+          </div>
+          <div class="message-content">
+            <h4>John Doe</h4>
+            <p>Hey, how are you?</p>
+        </li>
+        <li class="message-item">
+          <div class="profile-icon">
+            <img src="./images/profile-icon.png" alt="Profile Icon" />
+          </div>
+          <div class="message-content">
+            <h4>John Doe</h4>
+            <p>Hey, how are you?</p>
+        </li>
+        <li class="message-item">
+          <div class="profile-icon">
+            <img src="./images/profile-icon.png" alt="Profile Icon" />
+          </div>
+          <div class="message-content">
+            <h4>John Doe</h4>
+            <p>Hey, how are you?</p>
+        </li>
+        <li class="message-item">
+          <div class="profile-icon">
+            <img src="./images/profile-icon.png" alt="Profile Icon" />
+          </div>
+          <div class="message-content">
+            <h4>John Doe</h4>
+            <p>Hey, how are you?</p>
+        </li>
+      </ul>
+    </section>
+  </aside>
+  <section class="posts">
+    <div class="create-post">
+      <div class="profile-icon">
+        <img src="./images/profile-icon.png" alt="Profile Icon" />
+      </div>
+      <div class="post-input">
+        <input type="text" placeholder="Discuss about dev problems and solutions" />
+        <button>Post</button>
+      </div>
+    </div>
+    <div class="posts-list">
+      <ul>
+        <li>
+          <div class="post-item">
+            <div class="post-header">
+              <div class="post-header-left">
+                <div class="profile-icon">
+                  <img src="./images/profile-icon.png" alt="Profile Icon" />
+                </div>
+                <div class="post-author">
+                  <h4>John Doe</h4>
+                </div>
+              </div>
+              <div class="post-header-right">
+                3 minutes ago
+              </div>
+            </div>
+            <p class="post-content">Hey, how are you?</p>
+        </li>
+        <li>
+          <div class="post-item">
+            <div class="post-header">
+              <div class="post-header-left">
+              <div class="profile-icon">
+                <img src="./images/profile-icon.png" alt="Profile Icon" />
+              </div>
+              <div class="post-author">
+                <h4>Jane Smith</h4>
+              </div>
+              </div>
+              <div class="post-header-right">5 minutes ago</div>
+            </div>
+            <p class="post-content">I'm doing great, thanks for asking!</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 </body>
+
 </html>

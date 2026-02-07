@@ -7,6 +7,10 @@
 header {
     padding: 6px 20px;
     background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
 }
 
 header ul {
@@ -66,5 +70,226 @@ header ul li ul .profile-icon {
 header ul li ul .profile-icon img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+}
+
+.left-sidebar {
+    width: 250px;
+    background-color: #eee;
+    padding: 5px;
+    height: calc(100vh - 56px);
+    position: fixed;
+    left: 0;
+    top: 56px;
+    z-index: 90;
+}
+
+.left-sidebar ul {
+    list-style: none;
+}
+
+.left-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+    margin: 5px 0;
+}
+
+.left-sidebar ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.right-sidebar {
+    width: 300px;
+    height: calc(100vh - 56px);
+    background-color: #ccc;
+    padding: 5px;
+    position: fixed;
+    right: 0;
+    top: 56px;
+}
+
+.right-sidebar .messages {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.right-sidebar .messages .message-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.right-sidebar .messages .message-item.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.right-sidebar .profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.right-sidebar .profile-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.right-sidebar .messages .message-item .message-content {
+    margin-left: 5px;
+    font-family: sans-serif;
+}
+
+.right-sidebar .messages h2 {
+    margin-bottom: 10px;
+}
+
+.right-sidebar .messages ul {
+    list-style: none;
+}
+
+.right-sidebar .messages ul li {
+    margin-bottom: 10px;
+}
+
+.right-sidebar .messages ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.posts {
+    width: calc(100% - 550px);
+    position: absolute;
+    left: 250px;
+    top: 56px;
+    z-index: 50;
+    padding: 20px;
+}
+
+.posts .create-post {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #999;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.posts .create-post .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.posts .create-post .profile-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.posts .create-post .post-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.posts .create-post .post-input input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.posts .create-post .post-input button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #007bff;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.posts .posts-list .post-item {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.posts .posts-list .post-item .post-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.posts .posts-list .post-item .post-header .post-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.posts .posts-list .post-item .post-header .post-header-right {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.posts .posts-list .post-item .post-author {
+    margin-left: 10px;
+}
+
+.posts .posts-list .post-item .post-author h4 {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.posts .posts-list .post-item .post-content {
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.posts .posts-list ul {
+    list-style: none;
+}
+
+.posts .posts-list .post-item .profile-icon img {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
